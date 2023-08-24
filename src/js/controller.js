@@ -109,6 +109,10 @@ const controlAddRecipe = async function(newRecipe){
 
 }
 
+const welcome = function(){
+  console.log('Welcome')
+}
+
 const init = function(){
   bookMarkView.addHandlerBookMark(controlBookMarksLoad)
   recipeView.addHandlerRender(controlRecipe);
@@ -117,7 +121,7 @@ const init = function(){
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookMark(controlAddBookMark)
   addRecipeView.addHandlerUpload(controlAddRecipe)
-  console.log('Welcome!')
+  welcome()
 }
 init()
 
